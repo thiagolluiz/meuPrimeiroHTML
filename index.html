@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Meu Portifólio</title> <!--Nome que aparece na Aba-->
+        <meta charset=UFT-8> <!-- Para que o sistema leia em português usa-se esse comando CHARSET 'UFT-8'--> 
+        <meta name="viewport" content="width=device-width, intial-scale=1.0"> <!--Para que a pagina fique do tamaho do dispositivo celular-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css"> <!--Para adicionar link CSS, colocar o nome da pasta a ser importada-->
+    </head>
+    <body>
+        <!--navbr-->
+        <header  id="navbar"> <!--Cabeçalho-->
+        <!-- podia ser substituida po uma tag <div> as perderia a semantica-->
+            <img src="img/shuriken.png" alt="estrela ninja"> <!--usa-se o 'alt' para se por um acaso não se possa usar a imagem-->
+            <h2>Thiago Luiz</h2>
+            <nav> <!--Dizer que aqui tem uma barra de navegação-->
+                <ul id="navbar-list"> <!--Fazer lista na barra de navegação-->
+                    <li><a ref="#">Sobre</a></li>
+                    <li><a ref="#">Projetos</a></li>
+                    <li><a ref="#">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--fim navbar-->
+        <main> <!--indica que o que tem dentro dessa tag é o conteúdo principal-->
+            <!--Banner Inicio-->
+            <div id="main-banner"> <!--Bloco de código-->
+                <div id="banner-info">
+                    <h1>Olá, eu sou Thiago</h1>
+                    <img src="img/ninja.png" alt="Perfil ninja">
+                    <p class="thiago"> O Thiago </p>
+                </div>
+            </div>
+            <!--Banner Fim-->
+            <!--About Inicio-->
+            <section id=about-section> <!--Nova seção-->
+                <h2>Sobre o meu jeito ninja de ser</h2>
+                <p>"O sucesso nasce do querer, da determinação e persistência em se chegar a um objetivo. Mesmo não atingindo o alvo, quem busca e vence obstáculos, no mínimo fará coisas admiráveis"</p>
+            </section>
+            <!--About Fim-->
+        </main>
+        <!--Skills inicio-->
+        <section id="skills-section">
+            <div class="container">
+                <div class="skills-container">
+                    <img src="img/weapon1.png" alt="weapons">
+                    <h3>Desenvolvimento</h3>
+                    <p>Minha maior paixão é praticar fazer filhos</p>
+                    <p class="subtitle">Linguagens que ultilizo:</p>
+                    <p>HTML, CSS, JS(só que não)</p>
+                    <p class="subtitle">Projetos que posso desenvolver:</p>
+                    <p>E-comerces, Sites Instituionais</p>
+                </div>
+                <div class="skills-container central">
+                    <img src="img/weapon2.png" alt="weapons">
+                    <h3>Criação</h3>
+                    <p>Atuo também na analise e gereciameto de projetos</p>
+                    <p class="subtitle">Meus conhecimentos:</p>
+                    <p>Análise de software, Engeharia de requisitos, Análise de infra</p>
+                </div>
+                <div class="skills-container">
+                    <img src="img/weapon3.png" alt="weapons">
+                    <h3>Infraestrutura </h3>
+                    <p>Posso mensurar seus servidores, deixando o projeto mais performático</p>
+                    <p class="subtitle">Serviços de cloud:</p>
+                    <p>AWS, Google cloud, Micosoft Azure</p>
+                    <p class="subtitle">O que posso fazer:</p>
+                    <p>Clusters, servidores CDN, Diminuir o tempo de requesição</p>
+                </div>  
+            </div>
+        </section>
+        <!--Skils fim-->
+        <!--Jobs inicio-->
+        <section id="jobs-section">
+            <h2>Veja meus últimos trabalhos:</h2>
+            <p>Aqui estão os meus trabalhos mais recentes, para ver todos <a href="#">clique aqui.</a></p>
+            <div class="job-container">
+                <div class="job-box proj1"></div>
+                <div class="job-box proj2"></div>
+                <div class="job-box proj3"></div>
+            </div>
+            <div class="job-container">
+                <div class="job-box proj2"></div>
+                <div class="job-box proj3"></div>
+                <div class="job-box proj1"></div>
+            </div>
+        </section>
+        <!--Jobs fim-->
+        <!--footer inicio-->
+        <footer>
+            <h2>Me mande uma mensagem</h2>
+            <p>Caso queira falar sobre um projeto, me contrar para algum serviço, ou falar sobre ninjas</p>
+            <img src="img/ninja.png" alt="Perfil Ninja">
+            <form action="" method="">
+                <input type="text" name="name" placeholder="Seu nome">
+                <input type="email" name="email" placeholder="Seu e-mail">
+                <textarea name="msg" id="msg" placeholder="Digite uma mensagem"></textarea>
+                <input type="submit" value="Enviar" class="enviar">
+            </form>
+            <p>Desenvolvido por <span class="detail"> Thiago - Eu mesmo</span></p>
+        </footer>
+        <!--footer fim-->
+    </body>
+</html>
